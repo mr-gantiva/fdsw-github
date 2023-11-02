@@ -2,13 +2,63 @@ body {
   font-family: "Raleway", sans-serif;
 }
 
+/*logo*/
+nav {
+  background: #11151e !important;
+}
+.navbar-brand {
+  & img {
+    width: 150px;
+  }
+}
+
+.contenedor-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  & .box-imagen-header {
+    & img {
+      width: 400px;
+    }
+  }
+}
+
 /* Hero Section */
 
 #Hero-Section {
-  background-image: url("../img/bg-hero.jpg");
+  background-image: url("../img/bg-header-mr-gantiva.webp");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: left;
+}
+
+.text {
+  display: inline-block;
+  & h1 {
+    overflow: hidden;
+    font-size: 4rem;
+    border-right: 0.15em solid orange;
+    white-space: nowrap;
+    animation: typing 1.5s steps(20, end) forwards, blinking 0.75s infinite;
+  }
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes blinking {
+  from {
+    border-color: transparent;
+  }
+  to {
+    border-color: orange;
+  }
 }
 
 /* Mis trabajos */
@@ -32,8 +82,7 @@ body {
     font-weight: 400;
   }
 
-  .navbar-brand{
+  .navbar-brand {
     width: 100px;
   }
-
 }
