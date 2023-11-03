@@ -73,7 +73,70 @@ nav {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: top;
+  border-radius: 10px;
+  border-bottom: 2px solid #ededed;
+  overflow: hidden;
   border-radius: 5px;
+  &:hover {
+    transform: scale(0.99);
+    transition: all 0.5s ease-in-out;
+  }
+}
+
+.tag-herramientas {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  gap: 5px;
+  .box-herramienta {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30px;
+    font-size: 10px;
+    & i {
+      width: 100%;
+      font-size: 30px;
+      text-align: center;
+    }
+  }
+}
+.html-tag {
+  background: #e34c26;
+  color: #fafaf5;
+  padding: 2px 5px;
+  border-radius: 4px;
+}
+.css-tag {
+  background: #264de4;
+  color: #fafaf5;
+  padding: 2px 5px;
+  border-radius: 4px;
+}
+.javascript-tag {
+  background: #f0db4f;
+  color: #000;
+  padding: 2px 5px;
+  border-radius: 4px;
+}
+
+.card-text {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+}
+
+.btn-ver-mas {
+  border: 1px solid orange;
+  font-weight: 500;
+  margin-top: 10px;
+  &:hover {
+    background: orange;
+    color: #fafaf5;
+    font-weight: 500;
+    transition: all 0.5s ease-in-out;
+  }
 }
 
 /* Contacto */
