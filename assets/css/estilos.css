@@ -156,6 +156,44 @@ nav {
   }
 }
 
+@media (300px <= width <= 481px) {
+  .contenedor-header {
+    flex-direction: column;
+    & .box-imagen-header {
+      & img {
+        width: 150px;
+      }
+    }
+  }
+  .text {
+    & h1 {
+      font-size: 1.5rem;
+    }
+  }
+  .bg-mis-trabajos {
+    padding: 1.5rem !important;
+  }
+}
+
+@media (482px <= width <= 768px) {
+  .contenedor-header {
+    flex-direction: column;
+    & .box-imagen-header {
+      & img {
+        display: none;
+      }
+    }
+  }
+  .text {
+    & h1 {
+      font-size: 1.5rem;
+    }
+  }
+  .bg-mis-trabajos {
+    padding: 1.5rem !important;
+  }
+}
+
 @keyframes typing {
   from {
     width: 0;
